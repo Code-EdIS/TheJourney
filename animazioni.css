@@ -1,0 +1,4 @@
+@keyframes SlideInDestra{
+  from {transform: translateX(+1000px)}
+  to {transform: translateX(0)}
+}

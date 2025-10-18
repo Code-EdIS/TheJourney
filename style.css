@@ -1,0 +1,86 @@
+@import url("animazioni.css");
+
+body {
+    font-size: 20pt;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    overflow: hidden;
+}
+
+.Sfondi{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.SfondoAlfiere{
+    position: absolute;
+    font-size: 40rem;
+    top: 5.6rem;
+    color: rgb(0, 0,0, 0.2);
+    transform: rotate(-10deg);
+}
+
+.BarraSezioni{
+    background-color: #00F9DD;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.Sezioni{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.HeadBar{
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.HeadBar a{
+    display: inline-block;
+    font-weight: 900;
+    color: inherit;
+    text-decoration: none;
+    font-family: 'roboto';
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.HeadBar a:hover{
+    transform: scale(1.05);
+}
+
+.Desc{
+    font-family: 'tangerine';
+    transform: translateX(1000px);
+    animation: SlideInDestra 1s ease-in-out var(--delay, 0s) forwards;
+}
+.Desc1{ --delay: 0s}
+.Desc2{ --delay: 0.1s}
+.Desc3{ --delay: 0.2s}
+
+
+@media(max-width: 767px){
+    body{
+        width: 100%;
+        font-size: 12pt;
+        font-weight: 200;
+    }
+    
+    .Desc{
+        font-size: 40pt;
+        margin: 0;
+        text-align: left;
+    }
+}
