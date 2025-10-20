@@ -1,6 +1,14 @@
 @import url("animazioni.css");
 
+/* palette pensata: mix di grigi, creano un effetto visivo rilassante all'occhio ma allo stesso tempo non asettico come il solo bianco:
+    principale: #ebe7e3
+    secondario: #cfc4c7
+    testi: #1f1f1f  */
+    
+
 body {
+    background-color: #ebe7e3;
+    color: #1f1f1f;
     width: 100%;
     font-size: 18pt;
     font-weight: 200;
@@ -30,7 +38,7 @@ main {
 }
 
 .BarraSezioni{
-    background-color: #00F9DD;
+    background-color: #cfc4c7;
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -68,6 +76,11 @@ main {
 
 .Titolo{
     font-size: 44pt;
+    margin-bottom: 0;
+}
+
+.Proprietario{
+    margin-top: 0;
 }
 
 .Desc{
@@ -82,7 +95,7 @@ main {
 .Desc3{ --delay: 0.2s}
 
 .Blog{
-    background-color: white;
+    background-color: #ede7e3;
     width: 90%;
     height: 20rem;
     margin: 0 auto;
@@ -98,7 +111,11 @@ main {
 }
 
 .TestoBlog{
-    margin-left: 5rem;
+    margin-left: 4rem;
+}
+
+label{
+    display: block;
 }
 
 
@@ -114,8 +131,11 @@ main {
     }
     
     .Desc{
-        font-size: 40pt;
         margin: 0;
         text-align: left;
+    }
+    
+    .TestoBlog{
+        font-size: 16pt;
     }
 }
