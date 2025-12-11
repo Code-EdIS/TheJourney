@@ -1,0 +1,17 @@
+body {
+    background-color: #ebe7e3;
+    color: #1f1f1f;
+    width: 100%;
+    font-size: 15pt;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'caveat';
+}
+
+p{
+    font-family: 'Handlee';
+}

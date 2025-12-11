@@ -85,7 +85,7 @@ main {
 
 .Desc{
     font-family: 'Quintessential';
-    font-size: 32pt;
+    font-size: 28pt;
     padding: 0;
     transform: translateX(200%);
     animation: SlideInDestra 1s ease-in-out var(--delay, 0s) forwards;
@@ -116,6 +116,12 @@ main {
 
 label{
     display: block;
+}
+
+.linkBlog{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer ;
 }
 
 
