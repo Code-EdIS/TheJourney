@@ -4,7 +4,14 @@
     principale: #ebe7e3
     secondario: #cfc4c7
     testi: #1f1f1f  */
-    
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
 
 body {
     background-color: #ebe7e3;
@@ -14,6 +21,7 @@ body {
     font-weight: 200;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -94,6 +102,12 @@ main {
 .Desc2{ --delay: 0.1s}
 .Desc3{ --delay: 0.2s}
 
+.Posts{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+}
+
 .Blog{
     background-color: #ede7e3;
     width: 90%;
@@ -104,10 +118,11 @@ main {
     box-shadow: 0 0 5px 2px black;
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
+    transform-origin: center;
 }
 
 .Blog:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .TestoBlog{
