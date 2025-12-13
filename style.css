@@ -157,6 +157,8 @@ label{
     }
     
     .TestoBlog{
-        font-size: 16pt;
+        font-size: 15pt;
+        margin-left: 3rem;
+        padding-top: 0.5rem;
     }
 }
