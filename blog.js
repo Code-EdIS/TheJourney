@@ -1,5 +1,10 @@
-fetch("./BlogPost.json")
-    .then(res => res.json())
+fetch("./json/BlogPost.json")
+    .then(res => {
+      if(!res.ok){
+        throw new Error("Errore nel caricamento dei post");
+      }
+      return res.json;
+    } )
     .then(BlogPost => {
           BlogPost.forEach(post => {
             const articolo=document.createElement("article");
@@ -20,4 +25,6 @@ fetch("./BlogPost.json")
             
             document.querySelector(".Posts").appendChild(link);
           });
+    }).catch(error => {
+      document.querySelector(".Posts").textContent = "I Contenuti non sono disponibili";
     });
