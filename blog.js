@@ -1,22 +1,23 @@
-const post = [
-  {
-    title: "CREAZIONE BLOG CON JS",
-    link: "./blogs/Blog2.html"
-  }
-];
-
-const postaBlog = document.querySelector(".Posts");
-
-post.forEach(post => {
-  const a = document.createElement("a");
-  a.href = post.link;
-  a.classList.add("linkBlog");
-  
-  a.innerHTML=`
-      <article class="Blog">
-        <h2 class="TestoBlog">${post.title}</h2>
-      </article>
-  `;
-  
-  postaBlog.appendChild(a);
-});
+fetch("./BlogPost.json")
+    .then(res => res.json())
+    .then(BlogPost => {
+          BlogPost.forEach(post => {
+            const articolo=document.createElement("article");
+            const titolo=document.createElement("h2");
+            const link=document.createElement("a");
+            
+            articolo.classList.add("Blog");
+            
+            titolo.classList.add("TestoBlog");
+            
+            titolo.textContent=post.title;
+            
+            link.href=post.link;
+            
+            link.appendChild(articolo);
+            
+            articolo.appendChild(titolo);
+            
+            document.querySelector(".Posts").appendChild(link);
+          });
+    });
