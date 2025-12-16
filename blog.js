@@ -1,4 +1,4 @@
-fetch("./json/BlogPost.json")
+fetch("./BlogPost.json")
     .then(res => {
       if(!res.ok){
         throw new Error("Errore nel caricamento dei post");
