@@ -17,6 +17,8 @@ fetch("./json/listaPost.json")
             
             titolo.textContent=post.title;
             
+            link.classList.add("linkBlog")
+            
             link.href=post.link;
             
             link.appendChild(articolo);
