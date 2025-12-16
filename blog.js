@@ -23,7 +23,6 @@ fetch("./BlogPost.json")
             
             articolo.appendChild(titolo);
             
-            document.classList.add(".posts");
             document.querySelector(".Posts").appendChild(link);
           });
     }).catch(error => {
