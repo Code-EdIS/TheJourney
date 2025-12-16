@@ -1,12 +1,12 @@
-fetch("./BlogPost.json")
+fetch("./listaPost.json")
     .then(res => {
       if(!res.ok){
         throw new Error("Errore nel caricamento dei post");
       }
       return res.json();
-    } )
-    .then(BlogPost => {
-          BlogPost.forEach(post => {
+    })
+    .then(listaPost => {
+          listaPost.forEach(post => {
             const articolo=document.createElement("article");
             const titolo=document.createElement("h2");
             const link=document.createElement("a");
