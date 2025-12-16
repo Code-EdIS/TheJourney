@@ -3,7 +3,7 @@ fetch("./BlogPost.json")
       if(!res.ok){
         throw new Error("Errore nel caricamento dei post");
       }
-      return res.json;
+      return res.json();
     } )
     .then(BlogPost => {
           BlogPost.forEach(post => {
