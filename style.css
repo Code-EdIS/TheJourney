@@ -139,6 +139,33 @@ label{
     cursor: pointer ;
 }
 
+.Contattami::before{
+    content: "SE VUOI MANDARMI UNA MAIL:";
+    position: absolute;
+    top: -1.8rem;
+}
+
+.Contattami{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10rem 2rem 10rem 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    background: #cdc4c7;
+}
+
+.Contattami label{
+    margin: 0.5rem;
+}
+
+.datiContatto{
+    margin-top: 2rem;
+    align-self: flex-end;
+}
 
 @media(max-width: 767px){
     body{
