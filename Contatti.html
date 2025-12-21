@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animazioni.css">
@@ -17,18 +18,41 @@
 
  <body>
    
-      <form class="Contattami">
-       <label class="LabelNome">Nome:</label>
+      <form class="Contattami cForm">
+        <h4 class="titoloContSocial">Se vuoi mandarmi una mail:</h4>
+       <label class="LabelNome" for="nome">Nome:</label>
          <input type="text" id="nome" class="Nome" name="nome" placeholder="Il Tuo Nome" required>
          
-         <label class="LabelEmail">Email: </label>
+         <label class="LabelEmail" for="email">Email: </label>
          <input type="email" id="email" class="Email" name="email" placeholder="il tuo indirizzo email" required>
          
-         <label class="LabelMessaggio">Scivimi qua quello che vuoi: </label>
+         <label classclass="LabelInfo" for="altreInfo">Altre Info per poterti contattare: </label>
+         <section class="contInfo">
+         <input type="text" id="altreInfo" name="informazioni" placeholder="altra_email@email.it">
+         <i class="fa-solid fa-question"></i>
+          <p class="esempi">qualsiasi altro contatto che possa aiutarmi a contattarmi in caso la mail non fosse disponibile: <em>un'altra email, il numero di telefono, Instagram direct</em>...</p>
+         </section>
+         
+         <label class="LabelMessaggio" for="messaggio">Scivimi qua quello che vuoi: </label>
           <textarea class="Messaggio" id="messaggio" name="message" placeholder="Ciao" required></textarea>
           
           <button type="submit" class="datiContatto" id="mandaEmail">Invia</button>
      </form>
+     
+     <section class="Contattami cSocial">
+       <h4 class="titoloContSocial">I miei Social:</h4>
+       <span>
+       <i class="fa-brands fa-instagram">:</i>
+       <a href="https://www.instagram.com/ed.i.s?igsh=MTY0b3hjejI4MmgxeA==">ed.i.s</a>
+       <br><br>
+       <i class="fa-brands fa-github">: </i>
+       <a href="https://github.com/Code-EdIS">Code-EdIS</a>
+       <br><br>
+       <i class="fa-brands fa-linkedin">:</i>
+       <a href="https://www.linkedin.com/in/edoardo-ivan-0b25b2265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Ivan Silviu Edoardo</a>
+       </span>
+     </section>
+     
   <script src="email.js" defer></script>
  </body>
 

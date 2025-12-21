@@ -139,12 +139,6 @@ label{
     cursor: pointer ;
 }
 
-.Contattami::before{
-    content: "SE VUOI MANDARMI UNA MAIL:";
-    position: absolute;
-    top: -1.8rem;
-}
-
 .Contattami{
     display: flex;
     flex-direction: column;
@@ -165,6 +159,41 @@ label{
 .datiContatto{
     margin-top: 2rem;
     align-self: flex-end;
+}
+
+.contInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-question{
+    margin: 0 1rem 0 1rem;
+}
+
+.esempi{
+    position: absolute;
+    bottom: 50%;
+    width: 0;
+    overflow: hidden;
+    background: white;
+    z-index: 10;
+    transition: width;
+}
+
+.fa-question:hover + .esempi{
+    width: 50%;
+    border: 1px solid black;
+}
+
+.titoloContSocial{
+    border-bottom: 1px solid #ebe7e3;
+}
+
+span a{
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 @media(max-width: 767px){
