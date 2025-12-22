@@ -10,6 +10,8 @@ fetch("./json/listaPost.json")
             const articolo=document.createElement("article");
             const titolo=document.createElement("h2");
             const link=document.createElement("a");
+            const anteprima=document.createElement("p");
+            const logo=document.createElement("i");
             
             articolo.classList.add("Blog");
             
@@ -17,13 +19,25 @@ fetch("./json/listaPost.json")
             
             titolo.textContent=post.title;
             
+            anteprima.textContent=post.preview;
+            
+            anteprima.classList.add("anteprimaBlog");
+            
             link.classList.add("linkBlog")
             
-            link.href=post.link;
+            link.href=`./blogs/${post.slug}.html`;
             
             link.appendChild(articolo);
             
+            const pezzo = post.sfondo || "pawn";
+            
+            logo.classList.add("fa-regular", `fa-chess-${pezzo}`, "sfondoScacco");
+            
+            articolo.appendChild(logo);
+            
             articolo.appendChild(titolo);
+            
+            articolo.appendChild(anteprima);
             
             document.querySelector(".Posts").appendChild(link);
           });

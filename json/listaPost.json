@@ -1,11 +1,22 @@
 [
   {
     "title": "CREAZIONE BLOG CON JS",
-    "link": "./blogs/Blog2.html"
+    "slug": "Blog2",
+    "preview": "La mia prima vera interazione con il dom tramite js.",
+    "sfondo": "king"
   },
   
   {
     "title": "JSON MIO AMATO",
-    "link": "./blogs/Blog3.html"
+    "slug": "Blog3",
+    "preview": "Andando avanti con l'avventura dell creazione dei blog.",
+    "sfondo": "king"
+  },
+  
+  {
+    "title": "AMO GLI SCACCHI",
+    "slug": "Blog4",
+    "preview": "Ecco spiego il perché dei pezzi degli scacchi",
+    "sfondo": "rook"
   }
 ]
