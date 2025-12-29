@@ -235,15 +235,15 @@ span a{
 }
 
 .altezzaCardCs{
-    height: 17.5rem;
+    height: 100rem;
 }
 
 .altezzaCardFrontEnd{
-    height: 40.5rem;
+    height: 100rem;
 }
 
 .altezzaCardIa{
-    height: 55.5rem;
+    height: 100rem;
 }
 
 @media(max-width: 767px){
