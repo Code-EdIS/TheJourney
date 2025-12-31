@@ -244,6 +244,10 @@ span a{
     justify-content: space-between;
 }
 
+.fineFormazione{
+    margin: 0.5rem;
+}
+
 @media(max-width: 767px){
     body{
         width: 100%;
