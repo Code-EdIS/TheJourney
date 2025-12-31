@@ -225,25 +225,23 @@ span a{
     list-style: none;
 }
 
-.cardFormazioneCs, .cardFormazioneFrontEnd, .cardFormazioneIa{
-    height: 3.5rem;
+.cardFormazione{
+    max-height: 4rem;
     margin: 0 0.5rem 3rem 0.5rem;
     padding: 0 1rem 0.5rem 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
     overflow: hidden;
-    transition: height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.altezzaCardCs{
-    height: 20.5rem;
+.altezzaCard{
+    max-height: 3000px;
 }
 
-.altezzaCardFrontEnd{
-    height: 47.5rem;
-}
-
-.altezzaCardIa{
-    height: 74.5rem;
+.formazioneStudi span{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media(max-width: 767px){
