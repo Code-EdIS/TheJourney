@@ -246,7 +246,7 @@ span a{
 }
 
 .ditoPuntato{
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .giraDito{
@@ -267,7 +267,7 @@ span a{
     max-height: 3.5rem;
     overflow: hidden;
     cursor: pointer;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 1s ease-in-out;
 }
 
 .cardProgetto span{
