@@ -230,8 +230,9 @@ span a{
     margin: 0 0.5rem 3rem 0.5rem;
     padding: 0 1rem 0.5rem 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    border-radius: 1rem;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 1s ease-in-out;
     cursor: pointer;
 }
 
@@ -244,8 +245,47 @@ span a{
     justify-content: space-between;
 }
 
+.ditoPuntato{
+    transition: transform 1s ease-in-out;
+}
+
+.giraDito{
+    transform: rotate(-180deg);
+}
+
 .fineFormazione{
     margin: 0.5rem;
+}
+
+.cardProgetto{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    padding: 0rem 1rem 0rem 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    border-radius: 1rem;
+    max-height: 3.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.cardProgetto span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardProgetto.altezzaCard{
+    max-height: 10000px;
+}
+
+.screenProgetto{
+    width: 90%;
+    height: auto;
+    border-radius: 1rem;
+    align-self: center;
+    overflow: hidden;
 }
 
 @media(max-width: 767px){
