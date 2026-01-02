@@ -288,6 +288,11 @@ span a{
     overflow: hidden;
 }
 
+.bodyFeP{
+    width: 50%;
+    margin: 0 auto;
+}
+
 @media(max-width: 767px){
     body{
         width: 100%;
@@ -314,4 +319,8 @@ span a{
     height: 38%;
     border: 1px solid black;
 }
+
+.bodyFeP{
+    width: 100%;
+} 
 }
