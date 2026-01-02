@@ -98,9 +98,9 @@ main {
 }
 
 .Desc{
-    font-family: 'Roboto';
+    font-family: 'Cormorant Garamond';
     font-size: 28pt;
-    padding: 0;
+    padding: 0.5rem;
     transform: translateX(200%);
     animation: SlideInDestra 1s ease-in-out var(--delay, 0s) forwards;
 }
