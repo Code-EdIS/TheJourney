@@ -226,18 +226,14 @@ span a{
 }
 
 .cardFormazione{
-    max-height: 4rem;
+    height: 4rem;
     margin: 0 0.5rem 3rem 0.5rem;
     padding: 0 1rem 0.5rem 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
     border-radius: 1rem;
     overflow: hidden;
-    transition: max-height 1s ease-in-out;
+    transition: height 0.5s ease-in-out;
     cursor: pointer;
-}
-
-.altezzaCard{
-    max-height: 3000px;
 }
 
 .formazioneStudi span{
@@ -264,10 +260,10 @@ span a{
     padding: 0rem 1rem 0rem 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
     border-radius: 1rem;
-    max-height: 3.5rem;
+    height: 4.5rem;
     overflow: hidden;
     cursor: pointer;
-    transition: max-height 1s ease-in-out;
+    transition: height 0.5s ease-in-out;
 }
 
 .cardProgetto span{
@@ -285,7 +281,6 @@ span a{
     height: auto;
     border-radius: 1rem;
     align-self: center;
-    overflow: hidden;
 }
 
 .bodyFeP{
