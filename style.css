@@ -178,6 +178,19 @@ label{
     margin: 0.5rem;
 }
 
+.Contattami input, textarea, button{
+    border: none;
+    background: #ebe7e3;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 10px #1f1f1f
+}
+
+#mandaEmail{
+    margin: 1rem auto;
+    width: 5rem;
+    height: 2rem;
+}
+
 .datiContatto{
     margin-top: 2rem;
     align-self: flex-end;
@@ -189,29 +202,27 @@ label{
 }
 
 .fa-question{
+    position: relative;
     margin: 0 1rem 0 1rem;
+}
+
+.domanda{
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 .esempi{
     position: absolute;
-    bottom: 40%;
+    top: 60%;
     left: 50%;
     width: 50%;
-    height: 0%;
+    height: 0px;
     overflow: hidden;
     font-weight: 500;
     background: white;
     z-index: 10;
     transition: height 0.1s ease;
-}
-
-.fa-question:hover + .esempi{
-    height: 25%;
-    border: 1px solid black;
-}
-
-.titoloContSocial{
-    border-bottom: 1px solid #ebe7e3;
 }
 
 span a{
@@ -309,11 +320,6 @@ span a{
         margin-left: 3rem;
         padding-top: 0.5rem;
     }
-    
-    .fa-question:hover + .esempi{
-    height: 38%;
-    border: 1px solid black;
-}
 
 .bodyFeP{
     width: 100%;
