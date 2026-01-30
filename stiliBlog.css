@@ -1,14 +1,32 @@
-body {
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:url('./beige-paper.png');
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.5;
+}
+
+body{
     background-color: #ebe7e3;
     color: #1f1f1f;
-    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.testo {
+    width: 90%;
     font-size: 15pt;
     font-weight: 200;
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 
-h1{
+h1, h3{
     font-family: 'caveat';
 }
 
