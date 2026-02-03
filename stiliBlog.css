@@ -19,10 +19,12 @@ header{
 }
 
 .testo {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     font-size: 15pt;
     font-weight: 200;
-    margin: 1rem;
+    margin: 0 1rem 0 1rem;
     padding: 0;
 }
 
@@ -34,4 +36,7 @@ p{
     font-family: 'Handlee';
 }
 
-Chll
+.chiusura{
+    font-family: 'Handlee';
+    margin: 3rem auto;
+}
