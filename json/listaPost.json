@@ -25,5 +25,12 @@
     "slug": "Blog5",
     "preview": "Racconto un po' il viaggio che mi ha portato fino a qui e che chissà dove mi porterà.",
     "sfondo": "rook"
+  },
+  
+  {
+    "title": "IL VIAGGIO",
+    "slug": "Blog6",
+    "preview": "Non è una ripetizione, o meglio lo è ma questo blog segna la fine della progettazione di The Journey.",
+    "sfondo": "rook"
   }
 ]
